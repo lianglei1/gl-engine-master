@@ -1,6 +1,6 @@
 GLEngine
 ======
-GLEngine 是一个 C++ OpenGL PBR图形渲染引擎，该项目clone自：gl-engine https://github.com/JoshuaSenouf/gl-engine原作者不再更新，本项目将完成原作者todo项功能并优化扩展其功能使其可用于商用。
+GLEngine 是一个 C++ OpenGL PBR图形渲染引擎，旨在展示各种3D图形技术。该项目clone自：gl-engine https://github.com/JoshuaSenouf/gl-engine 原作者不再更新，本项目将完成原作者todo项功能并优化扩展其功能使其可用于商用。
 
 原项目demo视频地址 : https://vimeo.com/200574427
 
@@ -16,19 +16,19 @@ Screenshots
 ![](http://image.noelshack.com/fichiers/2016/52/1483180466-glengine2.png)
 
 
-Features
+功能：
 ------
 
 * 相机 :
     * 运动
     * 推进、远离
-    * 镜头曝光 :
+    * 曝光模式 :
         * 孔径
         * 快门速度
         * ISO
     * **TODO :** 
     * 景深
-    * Bloom （泛光）
+    * 泛光（Bloom）
     * 相机耀斑（CameraLensEffects）
 
 * 纹理 :
@@ -44,17 +44,18 @@ Features
 		* 粗糙度（Roughness）
 		* 金属度（Metalness）
 		* 环境光遮蔽（AO）
-	* **TODO :** Informations seamlessly sent to the G-Buffer
+	* **TODO :** 优化延迟渲染 G-Buffer
 
-* Models/Meshes :
-    * External models loading (.obj)
-    * **TODO :** PBR material pipeline compliant
-    * **TODO :** Revamp & debug to support kinda buggy models
+* 3D模型/网格 :
+    * obj文件格式支持
+    * **TODO :** obj材质系统导入
+    * **TODO :** gltf模型及材质支持
 
-* Basic Shapes :
-    * Simple shape generation (quad, plane, cube)
-    * Predefined array based
-    * **TODO :** Shape topology computation (sphere...)
+* 基础模型摆件 :
+    * 动态生成矩形、平面、方块
+    * **TODO :** 
+    * 球 
+    * 可编辑网格
 
 * Shaders :
     * Init/loading/binding from anywhere
