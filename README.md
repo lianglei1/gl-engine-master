@@ -48,8 +48,9 @@ Screenshots
 
 * 3D模型/网格 :
     * obj文件格式支持
-    * **TODO :** obj材质系统导入
-    * **TODO :** gltf模型及材质支持
+    * **TODO :** 
+    * obj材质系统导入
+    * Gltf模型及材质支持
 
 * 基础模型摆件 :
     * 动态生成矩形、平面、方块
@@ -57,46 +58,45 @@ Screenshots
     * 球 
     * 可编辑网格
 
-* Shaders :
-    * Init/loading/binding from anywhere
-    * G-Buffer support
-    * PBR material pipeline compliant
-	* **TODO :** UBOs
+* 着色器 :
+    * 材质对象
+    * 延迟渲染
+    * PBR光照管线
+	* **TODO :** Uniform 块支持
 
-* Skybox :
-    * 6-faced cubemap based
-    * Screenquad based
-    * Equirectangular/spherical maps
-    * HDR
-    * Deferred Rendering compliant
+* 天空盒 :
+    * 六面体天空
+      
     
-* Resources Manager :
-    * **TODO :** Resources (textures, shaders, models, materials...) centralization
+* 资源管理器  :
+    * **TODO :**资源全局管理优化(textures, shaders, models, materials...) 
 
-* Lights :
-    * Point light
-    * Directional light
-    * **TODO :** Spot light
+* 灯光 :
+    * 点光源
+    * 太阳光
+    * **TODO :** 
+    * 聚光灯
+    * 矩形光源
 
-* Lighting :
+* 光照 :
     * Cook-Torrance BRDF
-    * Deferred Rendering
-    * **TODO :** Shadow-mapping (PCF/Variance)
-    * **TODO :** Tiled Deferred Rendering (Compute shaders ?)
+    * 延迟渲染
+    * **TODO :** 硬阴影、软阴影 Shadow-mapping (PCF/Variance)
+    * **TODO :** 延迟渲染优化
 
-* PBR Pipeline :
+* PBR 管线 :
     * BRDF :
         * Cook-Torrance model
         * Diffuse : Lambertian/Disney
         * Fresnel term : Schlick
         * Microfacet distribution : GGX
         * Geometry attenuation : GGX-Smith
-    * Material pipeline using a roughness/metalness workflow
-    * Image-Based Lighting (Epic split-sum method) :
+    * 材质贴图规范按照金属度粗糙度工作流程
+    * 基于图像光照Image-Based Lighting (Epic split-sum method) :
         * Diffuse irradiance
         * Specular radiance
 
-* Post-processing :
+* 视频特效 Post-processing :
     * Scalable Ambient Obscurance (SAO)
     * FXAA
     * Motion Blur (camera/per-fragment)
