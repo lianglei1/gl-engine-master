@@ -1,8 +1,9 @@
 GLEngine
 ======
-GLEngine is a C++ OpenGL graphics engine which aimed to be a skill, knowledge and possibly graphical showcase. It will support many graphical features, from something as basic as textures and shaders to deferred rendering, PBR and such.
+GLEngine 是一个 C++ OpenGL PBR图形渲染引擎，该项目clone自：gl-engine https://github.com/JoshuaSenouf/gl-engine原作者不再更新，本项目将完成原作者todo项功能并优化扩展其功能使其可用于商用。
 
-Link to the demo reel : https://vimeo.com/200574427
+原项目demo视频地址 : https://vimeo.com/200574427
+
 
 Screenshots
 ------
@@ -18,28 +19,31 @@ Screenshots
 Features
 ------
 
-* Camera :
-    * Movements
-    * Zoom in/out
-    * Exposure :
-        * Aperture
-        * Shutter speed
+* 相机 :
+    * 运动
+    * 推进、远离
+    * 镜头曝光 :
+        * 孔径
+        * 快门速度
         * ISO
-    * **TODO :** Other physically based camera parameters
+    * **TODO :** 
+    * 景深
+    * Bloom （泛光）
+    * 相机耀斑（CameraLensEffects）
 
-* Textures :
-    * Init/loading/binding from anywhere
-	* Anisotropic Filtering
+* 纹理 :
+    * 纹理对象
+	* 各向异性滤波
     * HDR
     * Cubemap
 
-* Material :
-	* PBR material pipeline :
-		* Albedo
-        * Normal
-		* Roughness
-		* Metalness
-		* AO
+* 材质 :
+	* PBR材质管线 :
+		* 反照率（Albedo）
+        * 法相（Normal）
+		* 粗糙度（Roughness）
+		* 金属度（Metalness）
+		* 环境光遮蔽（AO）
 	* **TODO :** Informations seamlessly sent to the G-Buffer
 
 * Models/Meshes :
